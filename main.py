@@ -11,5 +11,6 @@ if __name__ == "__main__":
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
-        httpd.server_close()
-        print(time.asctime(),'Stop Server - %s:%s' %(HOST_NAME,PORT))
+        pass
+    httpd.server_close()
+    print(time.asctime(),'Stop Server - %s:%s' %(HOST_NAME,PORT))
